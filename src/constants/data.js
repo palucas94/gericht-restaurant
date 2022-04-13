@@ -35,7 +35,7 @@ const cocktails = [
     tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
   },
   {
-    title: "Dark 'N' Stormy",
+    title: 'Dark \'N\' Stormy',
     price: '$16',
     tags: 'Dark rum | Ginger beer | Slice of lime',
   },
@@ -79,4 +79,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+export default {wines, cocktails, awards};
