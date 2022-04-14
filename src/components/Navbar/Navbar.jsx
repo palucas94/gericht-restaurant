@@ -6,7 +6,7 @@ import images from '../../constants/images';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMnu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <nav className="app__navbar">
@@ -27,7 +27,7 @@ const Navbar = () => {
       </div>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
-          color="#fff" fontSize={27} onClick={() => setToggleMnu(true)}
+          color="#fff" fontSize={27} onClick={() => setToggleMenu(true)}
         />
         {toggleMenu && (
           <div
@@ -38,7 +38,7 @@ const Navbar = () => {
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
-              onClick={() => setToggleMnu(false)}
+              onClick={() => setToggleMenu(false)}
             />
             <ul className="app__navbar-smallscreen_links">
               <li className="p__opensans"><a href="#home">Home</a></li>
